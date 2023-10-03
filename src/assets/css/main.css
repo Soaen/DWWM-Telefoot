@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "subset-AvantGarde-Bold";
+  src: url("../fonts/subset-AvantGarde-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+  background-color: #191a20;
+  color: #f4f4f6;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header img {
+  height: 6rem;
+}
+header nav ul li {
+  display: inline-block;
+  font-family: "subset-AvantGarde-Bold";
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: #c6c6c6;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: 3rem 0;
+  text-align: center;
+}
+section h2 {
+  font-size: 3rem;
+}
+section h2 + p {
+  margin-bottom: 2.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.container .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .row .item {
+  flex-basis: 30%;
+  margin: 0 1.5rem 3rem;
+  padding: 3rem;
+  background-color: #24272d;
+}
+.container .row .item .icons {
+  display: flex;
+  justify-content: center;
+}
+.container .row .item .icons [class^=icon-] {
+  font-size: 6rem;
+  color: #777;
+}
+.container .row .item .icons img {
+  height: 6rem;
+}
+.container .row .item .icons img:first-child {
+  margin-right: 2rem;
+}
+.container .row .item .note {
+  font-size: 1.2rem;
+  text-transform: none;
+  font-weight: normal;
+  color: #687182;
+}
+
+section.hero {
+  padding: 0;
+}
+section.hero img {
+  width: 100%;
+}
+
+section.tv-rights .tv-rights-logo {
+  display: flex;
+  justify-content: center;
+}
+section.tv-rights .tv-rights-logo img {
+  max-height: 8rem;
+  margin: 1rem;
+}
+section.tv-rights .tv-rights-content h4 {
+  font-weight: bold;
+  margin-bottom: 2.4rem;
+}
+section.tv-rights .tv-rights-content h4 strong {
+  text-transform: uppercase;
+}
+section.tv-rights .tv-rights-content .tv-rights-content-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 767px) {
+  section.tv-rights .tv-rights-content .tv-rights-content-items {
+    padding: 0 15rem;
+  }
+}
+section.tv-rights .tv-rights-content .tv-rights-content-items .tv-rights-content-item {
+  flex-basis: 33.33%;
+  padding: 1rem 2rem 2rem;
+  position: relative;
+}
+section.tv-rights .tv-rights-content .tv-rights-content-items .tv-rights-content-item::before {
+  content: "";
+  height: 0.1rem;
+  width: 5rem;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 2.5rem);
+  background-color: #9fa5b2;
+}
+
+.offers .offer {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.offers .offer .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+.offers .offer .header img {
+  width: 10rem;
+}
+.offers .offer .price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.offers .offer .price .euro {
+  font-size: 4rem;
+}
+.offers .offer .engagement {
+  color: #687182;
+  font-size: 1.2rem;
+}
+.offers .offer .features {
+  margin-top: 3rem;
+}
+.offers .offer .features .feature {
+  border: 0.1rem solid #f4f4f6;
+  padding: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+.offers .offer .features .feature img {
+  width: 5rem;
+}
+
+#telefoot-bar {
+  background-image: url("../img/bg-bar.d86633e.jpg");
+  background-size: cover;
+  padding: 8rem 0;
+}
+#telefoot-bar img {
+  height: 7rem;
+}
+
+footer {
+  background-image: url("../img/bg-footer.ac49cc9.jpg");
+  background-size: cover;
+  background-position: bottom;
+  padding: 4rem 0;
+  font-family: "subset-AvantGarde-Bold";
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+footer .footer-brand img {
+  height: 6rem;
+}
+footer .footer-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem 0 1rem;
+}
+footer .footer-list ul {
+  padding: 0;
+}
+footer .footer-list ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+footer .footer-copy span {
+  color: #687182;
+}
+
+/*# sourceMappingURL=main.css.map */
