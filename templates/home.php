@@ -18,6 +18,10 @@
                 <li>Home</li>
                 <li>Telefoot Bar</li>
             </ul>
+            <ul>
+                <li><a href="./register.php">S'abonner</a></li>
+                <li>Se connecter</li>
+            </ul>
         </nav>
     </header>
 

@@ -39,7 +39,11 @@ header nav ul li {
   color: #c6c6c6;
   padding: 0 1.5rem;
 }
-
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 section {
   padding: 3rem 0;
   text-align: center;

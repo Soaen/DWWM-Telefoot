@@ -1,0 +1,6 @@
+{
+    "name": "sylvain/telefoot",
+    "require": {
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
