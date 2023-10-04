@@ -1,0 +1,5 @@
+RewriteEngine on 
+
+
+RewriteRule ^register$ index.php?page=register
+RewriteRule ^login$ index.php?page=login

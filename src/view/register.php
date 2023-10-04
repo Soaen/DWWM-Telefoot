@@ -1,13 +1,13 @@
 <?php
 
-class HomeView{
-
+class RegisterView{
+    
     public $controller;
     public $template;
 
-    public function __construct(HomeController $controller) {
+    public function __construct(RegisterController $controller) {
         $this -> controller = $controller;
-        $this -> template = DIR_TEMPLATE . "home.php";
+        $this -> template = DIR_TEMPLATE . "register.php";
     }
 
     public function render() {
