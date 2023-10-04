@@ -10,7 +10,7 @@ if(isset($_POST['email'])){
 
     $token =bin2hex(random_bytes(50));
 
-    $db = new PDO("mysql:host=localhost;dbname=startauth", "root", "root");
+    $db = new PDO("mysql:host=localhost;dbname=telefoot", "root", "root");
     $query = $db-> prepare("INSERT INTO password_reset (email, token) VALUES (:email, :token)");
     $query -> bindParam(':email', $email);
     $query -> bindParam(':token', $token);

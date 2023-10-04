@@ -13,7 +13,7 @@ if(isset($_GET['token']) && !isset($_SESSION['user'])){
     if(!empty($result)){
         $_SESSION['user']['email'] = $result['email'];
     }else{
-        header('Location: index.php');
+        header('Location: ./');
     };
 
 }else if(isset($_POST['password']) && isset($_SESSION['user'])){
@@ -25,7 +25,7 @@ if(isset($_GET['token']) && !isset($_SESSION['user'])){
     $query -> bindParam(":email", $_SESSION['user']['email']);
     if($query -> execute()){
         session_destroy();
-        header('Location: login.php');
+        header('Location: login');
     }else{
         echo "Problème de mise à jour du mdp";
     }
