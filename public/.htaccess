@@ -3,3 +3,6 @@ RewriteEngine on
 
 RewriteRule ^register$ index.php?page=register
 RewriteRule ^login$ index.php?page=login
+RewriteRule ^live$ index.php?page=live
+RewriteRule ^reset_password$ index.php?page=reset_password
+RewriteRule ^new_password/([0-9a-f]+)$ index.php?page=new_password&token=$1

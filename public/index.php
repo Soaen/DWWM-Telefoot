@@ -31,6 +31,21 @@ $pages = array(
         "model" => "LoginModel",
         "view" => "LoginView",
         "controller" => "LoginController"
+    ),
+    "live" => array(
+        "model" => "LiveModel",
+        "view" => "LiveView",
+        "controller" => "LiveController"
+    ),
+    "reset_password" => array(
+        "model" => "ResetPasswordModel",
+        "view" => "ResetPasswordView",
+        "controller" => "ResetPasswordController"
+    ),
+    "new_password" => array(
+        "model" => "NewPasswordModel",
+        "view" => "NewPasswordView",
+        "controller" => "NewPasswordController"
     )
 );
 

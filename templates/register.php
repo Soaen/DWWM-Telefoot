@@ -15,8 +15,7 @@ if(!empty($_POST)){
     if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
         $errors["email"] = "L'email n'est pas valide";
     }
-
-
+    
     if($password != $retypePassword){
         $errors["retypePassword"] = "Les deux mots de passe ne correspondent pas";
     }
@@ -32,7 +31,6 @@ if(!empty($_POST)){
     if( !$uppercase || !$lowercase || !$number || !$specialChar || strlen($password) < 12){
         $errors["password"] = "Le mot de passe doit contenir 12 caractères minimum, une lettre majuscule, use lettre minuscule, une chiffre et un caractère spécial";
     }
-
 
     if(empty($errors)){
         $hash = password_hash($password, PASSWORD_DEFAULT);
@@ -70,6 +68,11 @@ if(!empty($_POST)){
             <input type="text" name="firstname" id="inputFirstname" value="<?= isset($firstname) ? $firstname : ""?>">
             
         </div>
+        <div class="form-group">
+            <label for="inputLastname">Nom:</label>
+            <input type="text" name="lastname" id="inputLastname" value="<?= isset($lastname) ? $lastname : ""?>">
+            
+        </div>
 
         <div class="form-group">
             <label for="inputEmail">Email :</label>
@@ -85,7 +88,7 @@ if(!empty($_POST)){
         
         <div class="form-group">
             <label for="inputRetypeEmail">Confirmer email :</label>
-            <input type="email" name="email" id="inputRetypeEmail">
+            <input type="email" name="retypeEmail" id="inputRetypeEmail">
             <?php
                 if(isset($errors['retypeEmail'])){
                     ?>

@@ -19,8 +19,8 @@
                 <li>Telefoot Bar</li>
             </ul>
             <ul>
-                <li><a href="./register.php">S'abonner</a></li>
-                <li>Se connecter</li>
+                <li><a href="register">S'abonner</a></li>
+                <li><a href="login">Se connecter</a></li>
             </ul>
         </nav>
     </header>
